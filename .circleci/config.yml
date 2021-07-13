@@ -31,7 +31,6 @@ workflows:
 
 orbs:
   docker: circleci/docker@x.y.z
-version: 2.1
 workflows:
   lint:
     jobs:
