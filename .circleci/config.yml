@@ -11,3 +11,8 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+
+  lint:
+    jobs:
+      - docker/hadolint:
+          dockerfiles: 'path/to/Dockerfile:path/to/another/Dockerfile'
